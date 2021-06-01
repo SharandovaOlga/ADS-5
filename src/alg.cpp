@@ -1,12 +1,12 @@
 // Copyright 2021 NNTU-CS
 template<typename T>
 class TPQueue {
-  private:
+   private:
   struct ITEM {
   T data;
   ITEM* next;
   ITEM* prev;
-};
+  };
   ITEM* head;
   ITEM* tail;
   TPQueue::ITEM* create(const T& data, ITEM*prev) {
@@ -17,7 +17,7 @@ class TPQueue {
     return item;
   }
 
-  public:
+   public:
   TPQueue() :head(nullptr), tail(nullptr) {}
   ~TPQueue() {
     while (head)
