@@ -16,9 +16,8 @@ class TPQueue {
     item->prev = prev;
     return item;
   }
-  
   public:
-  TPQueue() :head(nullptr), tail(nullptr) {}
+  TPQueue() :head(nullptr), tail(nullptr) { }
   ~TPQueue() {
     while (head)
       pop();
