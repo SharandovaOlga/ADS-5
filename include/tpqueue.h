@@ -4,8 +4,8 @@
 #include <cassert>
 
 template<typename T>
-class TPQueue {  
-private:  
+class TPQueue {
+ private:
   struct ITEM {
     T data;
     ITEM* next;
@@ -20,7 +20,8 @@ private:
     item->prev = prev;
     return item;
   }
-public:
+  
+ public:
   TPQueue() :head(nullptr), tail(nullptr) {}
   ~TPQueue() {
     while (head)
