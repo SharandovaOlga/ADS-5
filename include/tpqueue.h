@@ -20,7 +20,7 @@ class TPQueue {
     item->prev = prev;
     return item;
   }
-  
+
  public:
   TPQueue() :head(nullptr), tail(nullptr) {}
   ~TPQueue() {
