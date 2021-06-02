@@ -1,9 +1,7 @@
 // Copyright 2021 NNTU-CS
 template<typename T>
-class TPQueue {
-  
-  private:
-  
+class TPQueue {  
+private:  
   struct ITEM {
     T data;
     ITEM* next;
@@ -18,9 +16,7 @@ class TPQueue {
     item->prev = prev;
     return item;
   }
-
-  public:
-  
+public:  
   TPQueue() :head(nullptr), tail(nullptr) {}
   ~TPQueue() {
     while (head)
